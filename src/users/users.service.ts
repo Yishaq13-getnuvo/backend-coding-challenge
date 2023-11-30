@@ -8,6 +8,7 @@ export type User = {
 
 @Injectable()
 export class UsersService {
+  // TODO: hash the passwords
   private readonly users = [
     {
       userId: 1,

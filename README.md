@@ -26,8 +26,8 @@ This project aims to create a backend solution for a web application. It consist
 ## Endpoints
 
 - **Login**: `/api/auth/login`
-- **Customers**: `/api/auth/customers`
-- **Products**: `/api/auth/products`
+- **Customers**: `/api/customers`
+- **Products**: `/api/products`
 
 ## Impress us
 
