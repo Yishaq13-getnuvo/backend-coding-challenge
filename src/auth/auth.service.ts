@@ -15,15 +15,11 @@ export class AuthService {
       throw new HttpException('User not found', 404);
     }
 
-    if (!user) {
-      throw new HttpException('User not found', 404);
-    }
-
     if (password !== user.password) {
       throw new HttpException('Wrong password', 401);
     }
 
-    // valida credentials at this point
+    // valid credentials at this point
 
     // create JWT token with user info
     const token = this.jwtService.sign({

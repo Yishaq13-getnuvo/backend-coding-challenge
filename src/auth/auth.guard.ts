@@ -20,7 +20,7 @@ export class AuthGuard implements CanActivate {
 
     try {
       const payload = await this.jwtService.verifyAsync(token, {
-        // TODO: get this env
+        // TODO: get this from env
         secret: 'supersecret',
       });
 
